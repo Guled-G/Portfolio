@@ -1,7 +1,7 @@
 :root{
-    --text-color: #1a1c20;
+    --text-color: #eeeff1;
     --link-color: #4a76ee;
-    --background-color: #eeeff1;
+    --background-color: #000000;
 }
 
 
@@ -16,9 +16,9 @@ html{
 }
 
  body{
-    --text-color: #1a1c20;
+    --text-color: #eeeff1;
     --link-color: #4a76ee;
-    --background-color: #eeeff1;
+    --background-color: #000000;
 }
 
 
@@ -40,5 +40,42 @@ html{
  a{
    color: var(--link-color);
    text-decoration: none;
+ } 
+ 
+ /* NAVBAR */
+ nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 , 50px;
+    height: 80px;
  }
 
+ nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+ }
+
+  nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+ }
+
+.email-highlight {
+    background-color: #4a76ee; /* Bright highlight */
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #fff !important;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 0 10px rgba(74, 118, 238, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.email-highlight:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(74, 118, 238, 0.7);
+}
